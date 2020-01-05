@@ -32,14 +32,14 @@ app.get('/help', (req, res) => {
 	res.render('help', {
 		helpText: 'This is the guide',
 		title: 'Help',
-		name: 'Andre'
+		name: 'Andre Rabakowski'
 	})
 })
 
 app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About me',
-		name: 'Chibaku'
+		name: 'Andre Rabakowski'
 	})
 })
 
@@ -84,14 +84,14 @@ app.get('/products', (req, res) => {
 
 app.get('/help/*', (req, res) => {
 	res.render('404', {
-		name: 'Chibaku',
+		name: 'Andre Rabakowski',
 		error: 'Help article not found'
 	})
 })
 
 app.get('*', (req, res) => {
 	res.render('404', {
-		name: 'Chibaku',
+		name: 'Andre Rabakowski',
 		error: 'Page not found'
 	})
 })
